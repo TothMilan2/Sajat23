@@ -20,5 +20,21 @@ namespace Sajat
         {
             InitializeComponent();
         }
+
+        private void felhasznaloMenu_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Panel.Children.Clear();
+            Panel.Children.Add(new Views.UserControl_Felhasznalok());
+        }
+
+        private void vasarloMenu_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            this.AddChild(new Views.UserControl_Felhasznalok());
+        }
+
+        private void termekMenu_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            this.AddChild(new Views.UserControl_Felhasznalok());
+        }
     }
 }

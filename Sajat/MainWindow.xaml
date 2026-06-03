@@ -6,5 +6,19 @@
         xmlns:local="clr-namespace:Sajat"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel></StackPanel>
+    <Grid x:Name="Panel">
+        <ListView>
+            <ListViewItem Width="300" x:Name="felhasznaloMenu" Margin="0,30,0,0" Content="Felhasználók" MouseDoubleClick="felhasznaloMenu_MouseDoubleClick" HorizontalAlignment="Center" BorderThickness="1" BorderBrush="Black" Padding="4">
+
+            </ListViewItem>
+            <ListViewItem Width="300" x:Name="vasarloMenu" Margin="0,30,0,0" Content="Vásárlók" MouseDoubleClick="vasarloMenu_MouseDoubleClick" BorderThickness="1" BorderBrush="Black" Padding="4">
+
+            </ListViewItem>
+            <ListViewItem Width="300" x:Name="termekMenu" Margin="0,30,0,0" Content="Termékek" BorderThickness="1" BorderBrush="Black" Padding="4" MouseDoubleClick="termekMenu_MouseDoubleClick">
+
+            </ListViewItem>
+        </ListView>
+        
+
+    </Grid>
 </Window>
