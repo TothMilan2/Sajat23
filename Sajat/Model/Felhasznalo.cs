@@ -36,7 +36,10 @@ namespace Sajat.Model
         public Felhasznalo()
         {
         }
+        
 
-
+        public Felhasznalo(string text1, string text2, string password, bool? isChecked, int kivalasztottszerepkorId)
+        {
+        }
     }
 }
