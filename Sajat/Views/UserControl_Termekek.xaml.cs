@@ -44,8 +44,8 @@ namespace Sajat.Views
             felhasznaloNevTextBox.Text = "";
             
 
-            var Felhasznalorep = new GenericRepository<Felhasznalo>(App.databasePath);
-            var felhasznaloLekerdezes = Felhasznalorep.GetAll();
+            var Termekrep = new GenericRepository<Termekek>(App.databasePath);
+            var felhasznaloLekerdezes = Termekrep.GetAll();
             datagridFelhasznalok.ItemsSource = felhasznaloLekerdezes;
 
         }
@@ -58,8 +58,8 @@ namespace Sajat.Views
                 felhasznaloNevTextBox.Text,
                 teljesNevTextBox.Text
             );
-            var Felhasznalorep = new GenericRepository<Termekek>(App.databasePath);
-            Felhasznalorep.insert(ujtermek);
+            var Termekrep = new GenericRepository<Termekek>(App.databasePath);
+            Termekrep.insert(ujtermek);
 
             ReadDB();
         }
@@ -69,8 +69,8 @@ namespace Sajat.Views
 
         private void torlesBtn_Click(object sender, RoutedEventArgs e)
         {
-            var Felhasznalorep = new GenericRepository<Termekek>(App.databasePath);
-            Felhasznalorep.delete(valasztottermek);
+            var Termekrep = new GenericRepository<Termekek>(App.databasePath);
+            Termekrep.delete(valasztottermek);
 
             ReadDB();
         }
@@ -100,8 +100,8 @@ namespace Sajat.Views
 
 
 
-            var Felhasznalorep = new GenericRepository<Felhasznalo>(App.databasePath);
-            Felhasznalorep.insert(valasztottermek);
+            var Termekrep = new GenericRepository<Termekek>(App.databasePath);
+            Termekrep.insert(valasztottermek);
 
             ReadDB();
 

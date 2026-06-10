@@ -15,7 +15,7 @@
             <TextBlock  Foreground="White" Margin="10" FontSize="14">Felhasználónév</TextBlock>
             <TextBox x:Name="felhasznaloNevTextBox"  Margin="10" Height="30" FontSize="16" FontFamily="Bahnschrift" />
             <TextBlock  Foreground="White" Margin="10" FontSize="14">Jelszó</TextBlock>
-            <TextBox x:Name="jelszoBox" Margin="10" Height="30" FontSize="16" FontFamily="Bahnschrift" />
+            <PasswordBox x:Name="jelszoBox" Margin="10" Height="30" FontSize="16" FontFamily="Bahnschrift" />
             <Button x:Name="loginBtn" Content="Bejelentkezés" Margin="50" Height="40" Background="Beige" Foreground="Black" FontSize="16" FontFamily="Bahnschrift" Click="loginBtn_Click"/>
         </StackPanel>
     </Grid>

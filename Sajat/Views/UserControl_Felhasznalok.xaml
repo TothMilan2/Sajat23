@@ -36,8 +36,7 @@
                 <TextBox x:Name="teljesNevTextBox" />
                 <TextBlock Text="Jelszo"  Foreground="White"/>
                 <PasswordBox x:Name="jelszoBox" />
-                <TextBlock Text="Körözik-e" Foreground="White"></TextBlock>
-                <CheckBox x:Name="korozik"></CheckBox>
+                
                 <TextBlock Text="Szerepkör" Foreground="White" />
                 <ComboBox x:Name="szerepkor" />
             </StackPanel>

@@ -26,7 +26,7 @@ namespace Sajat.Views
 
         private void loginBtn_Click(object sender, RoutedEventArgs e)
         {
-            if(felhasznaloNevTextBox.Text!="" || jelszoBox.Text != "")
+            if(felhasznaloNevTextBox.Text!="" || jelszoBox.Password != "")
             {
                 MessageBox.Show("Sikeres bejelentkezés!");
                 MainWindow mainWindow = new MainWindow();
