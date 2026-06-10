@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="Panel">
+
         <ListView>
-            <ListViewItem Width="300" x:Name="felhasznaloMenu" Margin="0,30,0,0" Content="Felhasználók" MouseDoubleClick="felhasznaloMenu_MouseDoubleClick" HorizontalAlignment="Center" BorderThickness="1" BorderBrush="Black" Padding="4">
+            <ListViewItem Width="300" x:Name="felhasznaloMenu" Margin="0,50,0,0" Content="Felhasználók" MouseDoubleClick="felhasznaloMenu_MouseDoubleClick" HorizontalAlignment="Center" BorderThickness="1" BorderBrush="Black" Padding="4">
 
             </ListViewItem>
             <ListViewItem Width="300" x:Name="vasarloMenu" Margin="0,30,0,0" Content="Vásárlók" MouseDoubleClick="vasarloMenu_MouseDoubleClick" BorderThickness="1" BorderBrush="Black" Padding="4">
@@ -18,7 +19,9 @@
 
             </ListViewItem>
         </ListView>
-        
+        <Rectangle Fill="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="450"/>
+        <Rectangle Fill="LightGray" HorizontalAlignment="Right" VerticalAlignment="Top" Width="200" Height="450"/>
+        <Label Content="Adminisztrációs panel" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="0,10,0,0"/>
 
     </Grid>
 </Window>

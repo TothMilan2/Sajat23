@@ -25,7 +25,7 @@
                 <DataGridTextColumn Binding="{Binding Jelszo}" Header="Jelszó" />
                 <DataGridTextColumn Binding="{Binding Szerepkor}" Header="Szerepkör Id" />
                 <DataGridTextColumn Binding="{Binding SzerepkorNev}" Header="Szerepkör név " />
-                <DataGridTextColumn Binding="{Binding }" Header="Körözik-e" />
+                
             </DataGrid.Columns>
         </DataGrid>
         <WrapPanel Width="250" Height="550"  Margin="50" Background="Black" >

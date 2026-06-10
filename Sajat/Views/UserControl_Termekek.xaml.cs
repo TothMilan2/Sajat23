@@ -54,14 +54,7 @@ namespace Sajat.Views
         {
 
 
-            Termekek ujtermek = new Termekek(
-                felhasznaloNevTextBox.Text,
-                teljesNevTextBox.Text
-            );
-            var Termekrep = new GenericRepository<Termekek>(App.databasePath);
-            Termekrep.insert(ujtermek);
-
-            ReadDB();
+            
         }
 
 
@@ -112,6 +105,18 @@ namespace Sajat.Views
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Visibility = Visibility.Hidden;
+        }
+
+        private void mentesBtn_Click_1(object sender, RoutedEventArgs e)
+        {
+            Termekek ujtermek = new Termekek(
+                felhasznaloNevTextBox.Text,
+                teljesNevTextBox.Text
+            );
+            var Termekrep = new GenericRepository<Termekek>(App.databasePath);
+            Termekrep.insert(ujtermek);
+
+            ReadDB();
         }
     }
 }
