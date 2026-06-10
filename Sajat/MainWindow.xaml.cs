@@ -29,12 +29,14 @@ namespace Sajat
 
         private void vasarloMenu_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            this.AddChild(new Views.UserControl_Felhasznalok());
+            Panel.Children.Clear();
+            Panel.Children.Add(new Views.UserControl_Vasarlok());
         }
 
         private void termekMenu_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            this.AddChild(new Views.UserControl_Felhasznalok());
+            Panel.Children.Clear();
+            Panel.Children.Add(new Views.UserControl_Termekek());
         }
     }
 }

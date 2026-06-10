@@ -9,7 +9,7 @@ namespace Sajat
     /// </summary>
     public partial class App : Application
     {
-        static string Database = "ekreta.db";
+        static string Database = "nemkreta.db";
         static string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         public static string databasePath = System.IO.Path.Combine(path, Database);
     }

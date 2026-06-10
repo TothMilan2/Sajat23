@@ -18,18 +18,17 @@ namespace Sajat.Model
         public string Jelszo { get; set; }
         public int Szerepkor { get; set; }
 
-        public bool Korozike { get; set; }
+     
 
 
 
-
-        public Felhasznalo(string felhasznaloNev, string teljesNev, string jelszo, int szerepkor, bool korozike)
+        public Felhasznalo(string felhasznaloNev, string teljesNev, string jelszo, int szerepkor)
         {
             FelhasznaloNev = felhasznaloNev;
             TeljesNev = teljesNev;
             Jelszo = jelszo;
             Szerepkor = szerepkor;
-            Korozike = korozike;
+           
 
 
         }

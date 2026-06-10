@@ -55,15 +55,15 @@ namespace Sajat.Views
             Szerepkor kivalasztottSzerepkor = (Szerepkor)Enum.Parse(typeof(Szerepkor), kivalasztottSzerepkorNev);
             int kivalasztottszerepkorId = (int)kivalasztottSzerepkor;
 
-            bool korozikValueTrue = korozik.IsChecked == true;
+            
 
     
             Felhasznalo ujfelhasznalo = new Felhasznalo(
                 felhasznaloNevTextBox.Text,
                 teljesNevTextBox.Text,
                 jelszoBox.Password,
-                kivalasztottszerepkorId,
-                korozikValueTrue
+                kivalasztottszerepkorId
+                
             );
             var Felhasznalorep = new GenericRepository<Felhasznalo>(App.databasePath);
             Felhasznalorep.insert(ujfelhasznalo);
@@ -115,8 +115,12 @@ namespace Sajat.Views
 
         }
 
-
-
-       
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            
+            mainWindow.Show();  
+            this.Visibility = Visibility.Hidden;
+        }
     }
 }

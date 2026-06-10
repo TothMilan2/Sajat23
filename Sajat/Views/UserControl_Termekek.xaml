@@ -6,7 +6,65 @@
              xmlns:local="clr-namespace:Sajat.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+    <StackPanel Orientation="Horizontal">
+        <DataGrid
+    x:Name="datagridFelhasznalok"
+    
+    Width="470"
+    Height="500"
+    AutoGenerateColumns="False"
+    CanUserAddRows="False"
+    CanUserDeleteRows="False"
+    IsReadOnly="True"
+    SelectionChanged="datagridFelhasznalok_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding id}" Header="ID" />
+                <DataGridTextColumn Binding="{Binding Termeknev}" Header="Terméknév" />
+                <DataGridTextColumn Binding="{Binding Funkcio}" Header="Funkció" />
+             
+            </DataGrid.Columns>
+        </DataGrid>
+        <WrapPanel Width="250" Height="400"  Margin="50" Background="Black" >
+            <StackPanel Width="200" Margin="20"  >
+                <TextBlock Text="Termék neve" Foreground="White" />
+                <TextBox x:Name="felhasznaloNevTextBox" />
+                <TextBlock Text="Funkció" Foreground="White" />
+                <TextBox x:Name="teljesNevTextBox" />
+                
+            </StackPanel>
+            <StackPanel Width="150" >
+                <Button
+            x:Name="mentesBtn"
+            Width="100"
+            Margin="10,10,0,0"
+            Background="Beige"
+            Click="mentesBtn_Click"
+            Content="Mentés"
+            Foreground="Black" 
+                BorderThickness="0"/>
+                <Button
+            x:Name="torlesBtn"
+            Width="100"
+            Margin="10,10,0,0"
+            Background="Red"
+            Click="torlesBtn_Click"
+            Content="Törlés"
+            Foreground="White" 
+                BorderThickness="0"/>
+                <Button
+            x:Name="modBtn"
+            Width="100"
+            Margin="10,10,0,0"
+            Background="Yellow"
+            Click="modBtn_Click"
+            Content="Módosítás"
+            Foreground="Black" 
+                BorderThickness="0"/>
+            </StackPanel>
+            <Button Margin="40" Background="Aqua" BorderThickness="0" FontSize="18" Click="Button_Click" BorderBrush="AliceBlue">
+                Vissza a főmenüre
+            </Button>
+        </WrapPanel>
+   
+    </StackPanel>
 </UserControl>

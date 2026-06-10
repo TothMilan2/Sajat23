@@ -49,5 +49,10 @@ namespace Sajat.Model
                 connection.Update(item);
             }
         }
+
+        internal void insert(Termekek valasztottermek)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -28,7 +28,7 @@
                 <DataGridTextColumn Binding="{Binding }" Header="Körözik-e" />
             </DataGrid.Columns>
         </DataGrid>
-        <WrapPanel Width="250" Height="400"  Margin="50" Background="Black" >
+        <WrapPanel Width="250" Height="550"  Margin="50" Background="Black" >
             <StackPanel Width="200" Margin="20"  >
                 <TextBlock Text="Felhasználó név" Foreground="White" />
                 <TextBox x:Name="felhasznaloNevTextBox" />
@@ -70,6 +70,9 @@
                 Foreground="Black" 
                     BorderThickness="0"/>
             </StackPanel>
+            <Button Margin="5" Background="Aqua" BorderThickness="0" FontSize="18" Click="Button_Click" BorderBrush="AliceBlue">
+                Vissza a főmenüre
+            </Button>
         </WrapPanel>
 
     </StackPanel>
